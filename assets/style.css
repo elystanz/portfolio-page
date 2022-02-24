@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* START HEADER STYLE */
+header {
+    padding: 25px 0;
+    background-color: rosybrown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+header h1 {
+    color: green;
+    padding: 17px;
+    margin: 0px;
+    background-color: turquoise;
+
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    margin: 25px 0;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+
+/* END HEADER STYLE */
+
+/* START ROW & COLUMN STYLE */
+.row {
+    display: flex;
+
+}
+
+.row h2 {
+    font-size: 45px;
+}
+
+.column {
+    flex: 50%;
+}
+
+.row h2 {
+    align-items: flex-start;
+}
