@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #afc1ee;
+    --secondary-color: #4b5977;
+    --tertiary-color: #769f5f;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +10,14 @@
 }
 
 body {
-    color: purple;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* START HEADER STYLE */
 header {
-    padding: 25px 0;
-    background-color: rosybrown;
+    padding: 10px 0;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,10 +25,11 @@ header {
 }
 
 header h1 {
-    color: green;
-    padding: 17px;
+    color: var(--secondary-color);
+    font-size: 50px;
+    padding: 15px 15px 15px 100px;
     margin: 0px;
-    background-color: turquoise;
+    background-color: var(--tertiary-color);
 
 }
 
@@ -45,28 +51,62 @@ header nav ul {
 }
 
 header nav ul li a {
+    color: var(--secondary-color);
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    
 }
 
 
 /* END HEADER STYLE */
 
+.hero {
+    background-image: url("../assets/images/faders.jpeg");
+    background-size: cover;
+    display: flex;
+    background-position: 100%;
+    background-attachment: fixed;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 300px;
+    position: relative;
+
+}
+
+.hero-text h2 {
+    font-size: 30px;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    bottom: 40px;
+    
+}
+
 /* START ROW & COLUMN STYLE */
 .row {
     display: flex;
+    padding: 25px;
+    
 
 }
 
 .row h2 {
     font-size: 45px;
-}
-
-.column {
-    flex: 50%;
-}
-
-.row h2 {
     align-items: flex-start;
+}
+
+.column1 {
+    flex: 5%;
+    border-right: 2px solid var(--tertiary-color);
+    text-align: right;
+    padding-right: 10px;
+}
+
+.column2 {
+    flex: 50%;
+    border-right: none;
+    padding-left: 10px;
 }
