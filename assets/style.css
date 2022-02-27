@@ -129,7 +129,7 @@ header nav ul li a {
 }
 
 .work-examples ul li:last-child {
-    flex-grow: 10;
+    flex-grow: 15;
 }
 
 .work-examples img {
@@ -137,6 +137,13 @@ header nav ul li a {
     max-height: 80%;
     object-fit: cover;
     vertical-align: bottom;
+    opacity: 0.6;
+    border: 4px solid var(--primary-color);
+}
+
+.work-examples img:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .contact-info {
